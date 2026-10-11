@@ -1,16 +1,29 @@
-import { Heart, Users, Lightbulb, Globe, ShieldCheck, Award, Calendar } from "lucide-react";
+
+import { Heart, Users, Lightbulb, Globe, ShieldCheck } from "lucide-react";
 
 export default function AboutUs() {
   return (
     <div className="w-full pt-24 sf-bg sf-text top-0 left-0">
       {/* HERO SECTION */}
-      <section className="pb-16" style={{ background: 'linear-gradient(to bottom, rgba(5, 150, 105, 0.05), var(--sf-bg))' }}>
-
+      <section
+        className="pb-16"
+        style={{
+          background:
+            "linear-gradient(to bottom, rgba(5, 150, 105, 0.05), var(--sf-bg))",
+        }}
+      >
+        <div className="max-w-6xl mx-auto px-6 text-center">
           <h1 className="text-5xl font-extrabold sf-text leading-tight mb-6">
-            About <span style={{ color: 'var(--sf-primary)' }}>SmartFoodSave</span>
+            About{" "}
+            <span style={{ color: "var(--sf-primary)" }}>
+              SmartFoodSave
+            </span>
           </h1>
+
           <p className="text-xl sf-text-muted max-w-3xl mx-auto">
-            A student‑built initiative transforming food waste from an invisible problem into a visible, solvable challenge through AI and community action.
+            A student-built initiative transforming food waste from an
+            invisible problem into a visible, solvable challenge through
+            AI and community action.
           </p>
         </div>
       </section>
