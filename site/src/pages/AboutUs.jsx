@@ -5,15 +5,6 @@ export default function AboutUs() {
     <div className="w-full pt-24 sf-bg sf-text top-0 left-0">
       {/* HERO SECTION */}
       <section className="pb-16" style={{ background: 'linear-gradient(to bottom, rgba(5, 150, 105, 0.05), var(--sf-bg))' }}>
-        <div className="max-w-6xl mx-auto px-6 text-center">
-          <div className="flex justify-center mb-6">
-          <div className="flex items-center gap-3 px-6 py-3 rounded-full shadow-sm" style={{ background: 'rgba(5, 150, 105, 0.1)', color: 'var(--sf-primary)' }}>
-            <Award className="h-6 w-6" style={{ color: 'var(--sf-primary)' }} />
-              <span className="font-semibold">
-                Built for USAII Global AI Hackathon 2026
-              </span>
-            </div>
-          </div>
 
           <h1 className="text-5xl font-extrabold sf-text leading-tight mb-6">
             About <span style={{ color: 'var(--sf-primary)' }}>SmartFoodSave</span>
@@ -111,36 +102,6 @@ export default function AboutUs() {
                 We continuously refine our models and improve our recommendations to ensure SmartFoodSave remains accurate, reliable, and impactful.
               </p>
             </div>
-          </div>
-        </div>
-      </section>
-
-      {/* DEVELOPMENT TIMELINE */}
-      <section className="py-16" style={{ background: 'var(--sf-bg-secondary)' }}>
-        <div className="max-w-6xl mx-auto px-6">
-          <h2 className="text-3xl font-bold sf-text text-center mb-12">Development Timeline</h2>
-
-          <div className="space-y-10">
-            {[
-              { date: "June 14", title: "Concept & Research", desc: "Identified the core problem of food waste in school cafeterias and defined our AI-driven approach." },
-              { date: "June 15", title: "Design & Architecture", desc: "Created the system flow, UI wireframes, and backend architecture for predictions and recommendations." },
-              { date: "June 16–18", title: "Development", desc: "Built the dashboard, mobile interface, API endpoints, and AI engine using synthetic data." },
-              { date: "June 19–20", title: "Testing & Refinement", desc: "Improved model accuracy, added responsible AI safeguards, and polished the user experience." },
-              { date: "June 21", title: "Final Submission", desc: "Prepared the pitch video, documentation, and final Devpost submission." }
-            ].map((item, index) => (
-              <div key={index} className="flex gap-6 items-start">
-                <div className="flex-shrink-0">
-                  <div className="flex items-center justify-center h-12 w-12 rounded-md text-white font-bold text-lg" style={{ background: 'var(--sf-primary)' }}>
-                    <Calendar className="h-6 w-6" />
-                  </div>
-                </div>
-                <div>
-                  <h3 className="text-xl font-bold sf-text mb-1">{item.date}</h3>
-                  <p className="sf-text font-semibold">{item.title}</p>
-                  <p className="sf-text-muted">{item.desc}</p>
-                </div>
-              </div>
-            ))}
           </div>
         </div>
       </section>
